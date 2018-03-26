@@ -1,0 +1,141 @@
+/* General setup to prepare the document.
+Here, the dimensions and properties of the document are reset from the
+browser's default values.
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 10px;
+    background-color:#a9a9a9;
+}
+
+body {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Specifying font types and sizes */
+/* Multiple fonts used here. Google Font is the primary and sans serif is a
+backup font in case Google Font cannot be loaded for some reason */
+h1, h3 {
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #4d3e4b;
+}
+
+
+h2 {
+    font-family:'Dancing Script', Georgia, Times, serif;
+    color: #2a2a2a;
+}
+
+p, input, li {
+    font-family:'Josefin Sans', Helvetica, Arial, sans-serif;
+    color:#2a2a2a;
+}
+
+/* Headings are aligned to the center to improve readability */
+h1 {
+    font-size: 4rem; /* Setting font size */
+    text-align: center;
+    color: #4d3e4b;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+p, li {
+    font-size: 1.6rem;
+    line-height: 1.5; /* Increases distance between lines */
+}
+
+/* Header layout */
+nav, article, aside, footer{
+    background-color: white; /* Makes the content area white */
+    padding: 1%; /* Adds space between the content and its edge*/
+}
+
+nav {
+    /* gives the everything in the nav tag a height of 50px, sets a background color
+    and also turns the nav container into a flexbox to make it easy to align its child elements */
+
+    height: 50px;
+    background-color:#2294e2;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    /* list items are usually bulleted or numbered. These rules prevent that
+    and also specify how fast the items should expand in relation to other elements */
+
+    padding:0;
+    list-style-type:none;
+    flex:2; /* makes this element grow faster than others */
+    display:flex;
+}
+
+nav li {
+    /* Instead of displaying a list vertically, display it horizontally */
+
+    display: inline;
+    text-align: center;
+    flex: 1;
+
+}
+
+nav a {
+    /* Links in the nav bar are made to stand out by changing their case and color */
+
+    display:inline-block;
+    font-sze: 2rem;
+    text-transform: uppercase;
+    text-decoration:none;
+    color: black;
+}
+
+
+/* Main website content */
+main {
+    /* This tells the browser to use a flexbox layout */
+
+    display:flex;
+}
+
+article {
+    flex: 4;
+}
+
+img {
+    /* Adds rounded corners to pictures of food */
+
+    border-radius: 15%;
+}
+
+aside {
+    /* This creates visual separation between the side bar and the rest of the content */
+
+    flex: 1;
+    margin-left: 10px;
+    background-color: #2294e2;
+}
+
+aside li {
+    /* Adds a little space between list items to space the links out */
+
+    padding-bottom: 10px;
+}
+
+footer {
+    margin-top: 10px;
+}
