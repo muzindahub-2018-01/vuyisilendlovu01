@@ -1,6 +1,6 @@
 ## African Food Recipes Website
 
-[African Recipes website screen shot](img/african_recipes.png)
+![African Recipes website screen shot](img/african_recipes.png)
 
 This is a website dedicated to African cuisine. It is written to demonstrate the basic features of HTML and CSS such as html tags, lists, headings, paragraphs and how these can be styled.
 
