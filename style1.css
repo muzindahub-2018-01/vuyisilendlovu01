@@ -43,6 +43,7 @@ h1 {
     font-size: 4rem; /* Setting font size */
     text-align: center;
     color: #4d3e4b;
+    text-transform: uppercase;
 }
 
 h2 {
